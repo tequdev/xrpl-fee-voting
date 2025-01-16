@@ -187,7 +187,9 @@ function App() {
                 )}
                 {votings && (
                   <ReferenceLine
-                    x={votings[key][Math.ceil(votings[key].length / 2)].name}
+                    x={
+                      votings[key][Math.ceil(votings[key].length / 2) - 1].name
+                    }
                     label={{
                       position: 'top',
                       value: '50%',
