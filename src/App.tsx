@@ -174,7 +174,12 @@ function App() {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" hide />
                 <YAxis />
-                <Tooltip />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: 'gray',
+                    color: 'white',
+                  }}
+                />
                 {/* <Bar dataKey="current" stackId="a" fill="#8884d8" /> */}
                 <Bar dataKey="voting" stackId="a" fill="#82ca9d" />
                 {votings && (
