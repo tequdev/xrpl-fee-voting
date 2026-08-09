@@ -118,7 +118,7 @@ function App() {
             name: v.domain || v.domain_legacy,
             key: v.master_key,
             current: parseValue(serverInfo[key], key),
-            voting: parseValue(v.votes[key] ?? serverInfo[key], key),
+            voting: parseValue(v.votes?.[key] ?? serverInfo[key], key),
           }))
           .sort((a, b) => {
             if (a.voting === b.voting) {
